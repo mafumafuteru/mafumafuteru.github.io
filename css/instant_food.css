@@ -1,0 +1,158 @@
+body {
+  font-family: gowes;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#show-nav {
+  display: none;
+}
+
+#title-image {
+  width: 50%;
+}
+
+#main-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 95%;
+  max-width: 1000px;
+}
+
+#food-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#food-nav #nav-header,
+.nav-item {
+  padding: 13px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#nav-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-item:hover {
+  background-color: darkgrey !important;
+  cursor: pointer;
+}
+
+.nav-item.selected {
+  background-color: darkgray !important;
+}
+
+#food-nav #nav-header {
+  background-color: #c21807;
+  color: white;
+}
+
+#food-nav .nav-item {
+  background-color: #e3dfdf;
+  color: #f20519;
+}
+
+#inventory-container {
+  flex: 3;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+#inventory-item-container {
+  height: 289px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: scroll;
+}
+
+#scroll-notify {
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#inventory-container #inventory-header {
+  color: white;
+  background-color: #c21807;
+  padding: 13px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#inventory-container .inventory-item {
+  background-color: #e3dfdf;
+  display: flex;
+  flex: row;
+}
+
+.inventory-img {
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+  object-fit: contain;
+  width: 135px;
+  height: 135px;
+}
+
+.item-title {
+  color: #f20519;
+  margin: 20px 0px 10px 0px;
+}
+
+.item-description {
+  font-family: Avenir;
+  color: #0d0d0d;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-container {
+    flex-direction: column;
+  }
+
+  #food-nav {
+    gap: 0px;
+  }
+
+  #show-nav {
+    display: block;
+    margin-top: 5px;
+    background-color: #e3dfdf;
+    border: none;
+    font-family: gowes;
+    color: #f20519;
+    padding: 13px;
+    font-size: 18px;
+  }
+
+  #nav-item-container {
+    display: none;
+  }
+
+  #nav-item-container:hover {
+    display: block;
+  }
+
+  #show-nav:hover ~ #nav-item-container {
+    display: block;
+  }
+}

@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+  background-image: url("../assets/surgery-chilli.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+#title {
+  align-self: center;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+#title-image {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.home-menu {
+  font-family: "gowes";
+  color: #e3dfdf;
+  font-size: 30px;
+  align-self: end;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-menu a {
+  padding-top: 1vh;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 955px) {
+  .spacer {
+    display: none;
+  }
+
+  #title {
+    margin-top: 10vh;
+  }
+
+  .home-menu {
+    margin-top: 30px;
+    align-self: center;
+    font-size: 30px !important;
+    padding-bottom: 2vh;
+  }
+}

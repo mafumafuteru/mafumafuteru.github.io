@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color: #e3dfdf;
+  font-family: "gowes";
+}
+
+.title-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-font-number {
+  font-family: "Fire_Ace";
+  color: #f20519;
+}
+
+#restaurants-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#restaurant-title {
+  margin: 0;
+  margin-left: 4vw;
+  width: 70%;
+  max-width: 500px;
+}
+
+#restaurant-names {
+  margin-left: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  font-size: 2.5em;
+}
+
+#restaurant-names p {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #restaurants-info {
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+}

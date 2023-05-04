@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  color: #f20519;
+  font-family: "gowes";
+  font-size: 3vh;
+  margin-left: 4vw;
+}
+
+.fa-font {
+  font-family: "Fire_Ace";
+}
+
+.semicolon-font {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+#contact-title {
+  margin: 0;
+  width: 60%;
+  max-width: 500px;
+}
+
+#contact-intro {
+  margin-top: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.fa-font {
+  font-family: "Fire_Ace";
+}
+
+#submit-button {
+  background-color: #f20519;
+  color: #0d0d0d;
+  border: none;
+  width: 28vh;
+  height: 6vh;
+  border-radius: 60px;
+  font-size: 2.8vh;
+  box-shadow: 2px 4px 8px #f20519;
+  margin-top: 2vh;
+  width: 40%;
+  font-family: "gowes";
+}
+
+.img-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tickle-tongue {
+  width: 80vh;
+}
+
+.contact-form-grid input[type="text"] {
+}

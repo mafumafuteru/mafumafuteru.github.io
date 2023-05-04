@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  background-image: url("../assets/burning_Tongue.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: "gowes";
+  max-width: 1000px;
+  width: 90%;
+  color: #f20519;
+  font-size: 6vh;
+  text-align: center;
+  padding-top: 1vh;
+}
+
+.fa-font {
+  font-family: "Fire_Ace";
+}
+
+#mobile-background {
+  display: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1240px) {
+  body {
+    background-image: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  #mobile-background {
+    margin-top: -10vh;
+    display: block;
+  }
+
+  p {
+    margin-top: 12vh;
+    max-width: 600px;
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 2vw;
+  }
+}

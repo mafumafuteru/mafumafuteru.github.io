@@ -1,0 +1,200 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#recipe-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#dish-info {
+  background-color: #0d0d0d;
+  color: #f20519;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#ingredients-info {
+  font-family: "gowes";
+  background-color: #f20519;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 4;
+  padding: 3vh;
+  height: 100vh;
+}
+
+#close-icon {
+  width: 50px;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+
+#ingredients-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hot-pot-text {
+  width: 20vw;
+  height: 10vw;
+  padding: 1vw;
+}
+
+#spice-meter {
+  width: 70%;
+  padding-bottom: 2vh;
+}
+
+#hot-pot-image-container {
+  background-color: #f20519;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-image: url("../assets/hot-pot.jpeg");
+  background-size: 220%;
+  background-position: center;
+  margin-top: 2.5vh;
+}
+
+#clock-image {
+  width: 2vw;
+  height: 2vw;
+}
+
+.dish-info-row {
+  font-family: "gowes";
+  font-size: 3vh;
+  display: flex;
+  gap: 0.8vw;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5vw;
+}
+
+.dish-info-row p {
+  margin: 0;
+  padding: 0;
+}
+
+.dish-info-row img {
+  width: 2vw;
+  height: 2vw;
+}
+
+#cooking-time-number {
+  font-family: "firestarter";
+}
+
+#course-type {
+  padding-bottom: 2vw;
+}
+
+#instructions-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  background-color: #f20519;
+  color: #0d0d0d;
+  border: none;
+  width: 28vh;
+  height: 6vh;
+  border-radius: 60px;
+  font-family: "gowes";
+  font-size: 2.8vh;
+  box-shadow: 2px 4px 8px #f20519;
+  margin-top: 2vh;
+  width: 90%;
+}
+
+#ingredients-title {
+  border-radius: 60px;
+  background-color: #e3dfdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f20519;
+  font-size: 8vh;
+  width: 56vh;
+  height: 8vh;
+  margin-top: 4vh;
+  margin-bottom: 8vh;
+  box-shadow: 2px 4px 8px #3e3b3b40;
+}
+
+.ingredient-image {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ingredients-grid {
+  justify-content: center;
+  gap: 4vw;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 4vh;
+  font-size: 2vh;
+  color: #e3dfdf;
+  text-align: center;
+  justify-content: center;
+  filter: drop-shadow(0vw 0.5vw 1vw #3e3b3b40);
+}
+
+@media screen and (min-width: 874px) and (max-width: 1007px) {
+  #dish-info {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 874px) {
+  .dish-info-row {
+    font-size: 2vh;
+  }
+
+  #recipe-layout {
+    flex-direction: column;
+  }
+
+  #hot-pot-image-container {
+    width: 40%;
+  }
+
+  #spice-meter {
+    width: 30%;
+  }
+
+  #hot-pot-text {
+    height: 12vh;
+    width: 24vh;
+  }
+
+  #ingredients-title {
+    font-size: 4vh;
+    width: 40vh;
+    height: 8vh;
+  }
+
+  #ingredients-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  #instructions-button {
+    width: 28vh;
+  }
+}

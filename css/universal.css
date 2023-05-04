@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "rusted";
+  src: url("../assets/RUSTED_2.woff2");
+}
+@font-face {
+  font-family: "firestarter";
+  src: url("../assets/FIRESTARTER.woff2");
+}
+@font-face {
+  font-family: "gowes";
+  src: url("../assets/GOWES.woff2");
+}
+@font-face {
+  font-family: "Fire_Ace";
+  src: url("../assets/Fire_Ace.woff2");
+}
+
+.dropbtn {
+  padding: 0px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dropbtn img {
+  width: 80px;
+}
+
+.menu {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  overflow: hidden;
+  text-align: center;
+  font-family: gowes !important;
+}
+
+.menu:hover .menu-choice {
+  display: block;
+}
+
+.menu-choice {
+  padding: 10px;
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  background-color: #c21807;
+  border-radius: 20%;
+}
+
+.menu-choice {
+  font-size: 20px;
+}
+
+.menu-choice input {
+  background-image: url("../assets/search@2x.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1vw;
+  width: 60%;
+  margin: 1vh 0 2vh;
+  font-size: 16px;
+  border-radius: 20%;
+  height: 2vw;
+  border: none;
+}
+
+.menu-choice a {
+  color: #e3dfdf;
+  margin: 1vh 0 2vh;
+  text-decoration: none;
+  display: block;
+}
